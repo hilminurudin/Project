@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>KKN-PPM UGM Temayun Tretep 2026</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Painter';
+      src: url('./assets/Font/Painter.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    .font-painter {
+      font-family: 'Painter', sans-serif;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-[#ffffff] text-gray-800">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 left-0 w-full z-50">
+  <div class="container mx-auto flex items-center px-6 py-6 relative">
+
+    <!-- Menu Desktop (Centered) -->
+    <nav class="hidden md:flex bg-white/20 backdrop-blur-md 
+                px-8 py-3 rounded-full 
+                shadow-lg border border-white/30
+                absolute left-1/2 -translate-x-1/2">
+
+      <ul class="flex space-x-10 text-black font-medium">
+        <li><a href="#tentang" class="hover:text-yellow-300 transition">Tentang</a></li>
+        <li><a href="#lokasi" class="hover:text-yellow-300 transition">Lokasi</a></li>
+        <li><a href="#mitra" class="hover:text-yellow-300 transition">Mitra</a></li>
+      </ul>
+    </nav>
+
+    <!-- Button Desktop -->
+<a href="#footer"
+   class="hidden md:inline-block 
+          bg-yellow-400 
+          text-white px-6 py-3 
+          rounded-full font-semibold 
+          shadow-md 
+          transition duration-300
+          hover:shadow-[0_0_20px_rgba(250,204,21,0.9)] 
+          hover:scale-105 
+          ml-auto">
+  Kontak
+</a>
+
+<!-- Burger Button -->
+<button id="menu-btn" class="md:hidden text-black text-3xl ml-auto z-50 relative">
+  <span id="menu-icon">☰</span>
+</button>
+
+<!-- Overlay -->
+<div id="mobile-overlay"
+     class="fixed inset-0 bg-white/30 hidden z-40 md:hidden">
+
+  <!-- White Box -->
+  <div id="mobile-menu"
+       class="absolute top-20 right-4
+              bg-white w-64
+              rounded-2xl border-4 border-yellow-400
+              py-8 px-4 text-center
+              shadow-xl
+              transform scale-95 opacity-0
+              transition-all duration-200 ease-in-out">
+
+    <ul class="flex flex-col space-y-6 text-black text-lg font-medium">
+      <li><a href="#tentang" class="hover:text-yellow-300 transition">Tentang</a></li>
+      <li><a href="#mitra" class="hover:text-yellow-300 transition">Mitra</a></li>
+      <li><a href="#lokasi" class="hover:text-yellow-300 transition">Lokasi</a></li>
+      <li>
+        <a href="#footer"
+           class="bg-yellow-400 text-white px-6 py-2 rounded-full inline-block text-sm">
+          Kontak
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+</header>
+ <!-- ================= HERO ================= -->
+<section id="hero"
+  class="relative h-screen bg-cover bg-center flex items-center justify-center text-center"
+  style="background-image: url('./assets/HeroBackground.png');">
+    
+  <div class="absolute inset-0 
+              bg-gradient-to-b 
+              from-transparent 
+              via-white/40 
+              to-white">
+  </div>
+
+  <!-- Konten -->
+  <div class="relative z-10">
+    <img src="./assets/logo.svg" 
+         alt="Logo Temayun Tretep 2026"
+         class="w-3/4 md:w-2/3 lg:w-[500px] mx-auto h-auto">
+  </div>
+
+</section>
+
+  <!-- ================= TENTANG ================= -->
+<section id="tentang"
+  class="relative scroll-mt-24 py-20 bg-cover bg-center bg-no-repeat"
+  style="background-image: url('./assets/Tentang.svg');">
+  <div class="absolute inset-0 
+              bg-gradient-to-b 
+              from-white via-transparent to-white">
+  </div>
+
+  <div class="relative container mx-auto px-6">
+    <h2 class="text-5xl text-center font-painter mb-12">Tentang</h2>
+
+<div class="relative mb-12">
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide w-[300px] md:w-[500px]">
+        <img src="./assets/Image1.png"
+             class="rounded-3xl shadow-xl w-full h-[400px] object-cover">
+      </div>
+
+      <div class="swiper-slide w-[300px] md:w-[500px]">
+        <img src="./assets/Image2.png"
+             class="rounded-3xl shadow-xl w-full h-[400px] object-cover">
+      </div>
+
+      <div class="swiper-slide w-[300px] md:w-[500px]">
+        <img src="./assets/Image3.png"
+             class="rounded-3xl shadow-xl w-full h-[400px] object-cover">
+      </div>
+
+      <div class="swiper-slide w-[300px] md:w-[500px]">
+        <img src="./assets/Image4.png"
+             class="rounded-3xl shadow-xl w-full h-[400px] object-cover">
+      </div>
+
+      <div class="swiper-slide w-[300px] md:w-[500px]">
+        <img src="./assets/Image5.png"
+             class="rounded-3xl shadow-xl w-full h-[400px] object-cover">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Fade kiri -->
+  <div class="pointer-events-none absolute top-0 left-0 h-[400px] w-24 md:w-32
+              bg-gradient-to-r from-white to-transparent z-10">
+  </div>
+
+  <!-- Fade kanan -->
+  <div class="pointer-events-none absolute top-0 right-0 h-[400px] w-24 md:w-32
+              bg-gradient-to-l from-white to-transparent z-10">
+  </div>
+
+</div>
+
+    <div class="bg-white p-8 rounded-2xl shadow-md">
+      <ul class="list-disc pl-6 space-y-4">
+        <li>
+          <span class="font-bold text-[#7ea0b8]"> 
+            Kegiatan Kuliah Kerja Nyata – Pembelajaran Pemberdayaan Masyarakat (KKN-PPM)
+          </span>
+          Universitas Gadjah Mada Periode II Tahun 2026 merupakan program pengabdian mahasiswa yang berfokus pada kolaborasi bersama masyarakat dalam mengidentifikasi potensi lokal, merancang solusi inovatif, serta mendorong pembangunan berkelanjutan berbasis kebutuhan dan kearifan setempat.
+        </li>
+        <li>
+          Tema yang diusung Tim Temayun Tretep 2026 adalah
+          <span class="font-bold text-[#7ea0b8]">
+            "Perwujudan Desa Mandiri Melalui Peningkatan Kapasitas Sosial Budaya dan Ekonomi serta Pemberdayaan Potensi Daerah untuk Mewujudkan Kesejahteraan Masyarakat Desa Bojong dan Desa Bendungan, Kecamatan Tretep, Kabupaten Temanggung, Provinsi Jawa Tengah."
+          </span>
+        <li>
+          Berlokasi di Kecamatan Tretep, Kabupaten Temanggung, kegiatan ini berfokus pada penguatan kapasitas masyarakat melalui pengembangan UMKM dan ekonomi kreatif, optimalisasi potensi pertanian dan sumber daya lokal, peningkatan literasi digital dan pendidikan, penguatan kelembagaan desa, serta pelestarian nilai sosial budaya sebagai fondasi pembangunan desa mandiri yang berkelanjutan.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<!-- ================= LOKASI ================= -->
+<section id="lokasi"
+  class="relative scroll-mt-24 py-20 bg-cover bg-center bg-no-repeat"
+  style="background-image: url('./assets/Lokasi.svg');">
+
+  <div class="absolute inset-0 
+              bg-gradient-to-b 
+              from-white via-transparent to-white">
+  </div>
+
+  <div class="relative container mx-auto px-6">
+    <h2 class="text-5xl text-center font-painter mb-12">Lokasi</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Desa Bojong -->
+      <a href="https://www.google.com/maps?q=-7.1848418,110.0122121"
+         target="_blank"
+         class="block bg-white rounded-2xl shadow-md overflow-hidden 
+                hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+        <img src="./assets/Bojong.png" 
+             alt="Desa Bojong"
+             class="w-full h-100 object-cover">
+
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-semibold mb-3">Desa Bojong</h3>
+          <p class="text-gray-600">
+            Kecamatan Tretep, Kabupaten Temanggung
+          </p>
+          <p class="text-sm text-blue-500 mt-4">
+            Lihat di Google Maps →
+          </p>
+        </div>
+      </a>
+
+      <!-- Desa Bendungan -->
+      <a href="https://www.google.com/maps?q=-7.1689843,110.0241225"
+         target="_blank"
+         class="block bg-white rounded-2xl shadow-md overflow-hidden 
+                hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+        <img src="./assets/Bendungan.png" 
+             alt="Desa Bendungan"
+             class="w-full h-100 object-cover">
+
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-semibold mb-3">Desa Bendungan</h3>
+          <p class="text-gray-600">
+            Kecamatan Tretep, Kabupaten Temanggung
+          </p>
+          <p class="text-sm text-blue-500 mt-4">
+            Lihat di Google Maps →
+          </p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+  <!-- ================= MITRA ================= -->
+<section id="mitra" 
+  class="relative scroll-mt-24 py-20 bg-cover bg-center bg-no-repeat"
+  style="background-image: url('./assets/Mitra.svg');">
+
+  <!-- Fade Atas -->
+  <div class="absolute inset-0 bg-gradient-to-b from-white via-white/60 to-transparent"></div>
+
+  <div class="relative container mx-auto px-6">
+    <h2 class="text-5xl text-center font-painter mb-12">Mitra Terdahulu</h2>
+
+    <div class="flex justify-center items-center gap-12 flex-wrap">
+      <img src="./assets/BlackCorner.svg" class="h-16">
+      <img src="./assets/Glico.svg" class="h-16">
+      <img src="./assets/Everyprint.svg" class="h-16">
+    </div>
+  </div>
+
+</section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="footer" class="scroll-mt-24 bg-[#7ea0b8] text-white py-16">
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+      
+      <div>
+          <img src="./assets/footer.svg"
+            alt="Logo Temayun Tretep 2026"
+            class="h-16 md:h-20 lg:h-24 w-auto">
+        <h3 class="text-2xl font-bold mb-4">Temayun Tretep 2026</h3>
+        <p>
+          KKN-PPM UGM 2026 Desa Bojong & Desa Bendungan,
+          Kec. Tretep, Temanggung.
+        </p>
+      </div>
+
+  <div>
+    <h4 class="font-semibold mb-4">Navigasi</h4>
+    <ul class="space-y-2">
+      <li>
+        <a href="#hero" class="hover:text-yellow-300 transition duration-300">
+          Beranda
+        </a>
+      </li>
+      <li>
+        <a href="#tentang" class="hover:text-yellow-300 transition duration-300">
+          Tentang
+        </a>
+      </li>
+      <li>
+        <a href="#lokasi" class="hover:text-yellow-300 transition duration-300">
+          Lokasi
+        </a>
+      </li>
+      <li>
+        <a href="#mitra" class="hover:text-yellow-300 transition duration-300">
+          Mitra
+        </a>
+      </li>
+    </ul>
+  </div>
+
+      <div>
+        <h4 class="font-semibold mb-4">Kontak</h4>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="./assets/icon/location.svg" alt="Location" class="w-5 h-5">
+            <p>Kecamatan Tretep, Kabupaten Temanggung</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./assets/icon/email.svg" alt="Email" class="w-5 h-5">
+            <p>temayuntretep2026@gmail.com</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./assets/icon/phone.svg" alt="Phone" class="w-5 h-5">
+            <p>+62 823-2949-6566</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-12 border-t border-white/30 pt-6">
+      © 2026 Temayun Tretep – KKN-PPM UGM, All rights reserved.
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    centeredSlides: true,
+    slidesPerView: "2",
+    loop: true,
+    allowTouchMove: false,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: -60,
+      depth: 400,     
+      modifier: 2,    
+      slideShadows: false,
+    },
+  });
+
+  const slider = document.querySelector(".mySwiper");
+
+  slider.addEventListener("click", function(e) {
+    const width = slider.offsetWidth;
+    const clickPosition = e.offsetX;
+
+    if (clickPosition > width / 2) {
+      swiper.slideNext();
+    } else {
+      swiper.slidePrev();
+    }
+  });
+
+  // Mobile menu toggle
+const menuBtn = document.getElementById('menu-btn');
+const overlay = document.getElementById('mobile-overlay');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuIcon = document.getElementById('menu-icon');
+
+// Toggle menu
+menuBtn.addEventListener('click', () => {
+  overlay.classList.toggle('hidden');
+
+  // Animate box
+  setTimeout(() => {
+    mobileMenu.classList.toggle('scale-95');
+    mobileMenu.classList.toggle('opacity-0');
+  }, 10);
+
+  // Toggle icon
+  if (overlay.classList.contains('hidden')) {
+    menuIcon.textContent = '☰';
+  } else {
+    menuIcon.textContent = '✕';
+  }
+});
+
+// Close when click outside box
+overlay.addEventListener('click', (e) => {
+  if (e.target === overlay) {
+    closeMenu();
+  }
+});
+
+// Close when link clicked
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
+});
+
+function closeMenu() {
+  mobileMenu.classList.add('scale-95', 'opacity-0');
+  setTimeout(() => {
+    overlay.classList.add('hidden');
+  }, 200);
+  menuIcon.textContent = '☰';
+}
+</script>
+</body>
+</html>
