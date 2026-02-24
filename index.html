@@ -29,12 +29,8 @@
   </style>
 </head>
 <body class="bg-[#ffffff] text-gray-800">
-
-<!-- ================= NAVBAR ================= -->
 <header class="fixed top-0 left-0 w-full z-50">
   <div class="container mx-auto flex items-center px-6 py-6 relative">
-
-    <!-- Menu Desktop (Centered) -->
     <nav class="hidden md:flex bg-white/20 backdrop-blur-md 
                 px-8 py-3 rounded-full 
                 shadow-lg border border-white/30
@@ -46,8 +42,6 @@
         <li><a href="#mitra" class="hover:text-yellow-300 transition">Mitra</a></li>
       </ul>
     </nav>
-
-    <!-- Button Desktop -->
 <a href="#footer"
    class="hidden md:inline-block 
           bg-yellow-400 
@@ -60,17 +54,11 @@
           ml-auto">
   Kontak
 </a>
-
-<!-- Burger Button -->
 <button id="menu-btn" class="md:hidden text-black text-3xl ml-auto z-50 relative">
   <span id="menu-icon">☰</span>
 </button>
-
-<!-- Overlay -->
 <div id="mobile-overlay"
      class="fixed inset-0 bg-white/30 hidden z-40 md:hidden">
-
-  <!-- White Box -->
   <div id="mobile-menu"
        class="absolute top-20 right-4
               bg-white w-64
@@ -95,7 +83,6 @@
   </div>
 </div>
 </header>
- <!-- ================= HERO ================= -->
 <section id="hero"
   class="relative h-screen bg-cover bg-center flex items-center justify-center text-center"
   style="background-image: url('./assets/HeroBackground.png');">
@@ -106,8 +93,6 @@
               via-white/40 
               to-white">
   </div>
-
-  <!-- Konten -->
   <div class="relative z-10">
     <img src="./assets/logo.svg" 
          alt="Logo Temayun Tretep 2026"
@@ -115,8 +100,6 @@
   </div>
 
 </section>
-
-  <!-- ================= TENTANG ================= -->
 <section id="tentang"
   class="relative scroll-mt-24 py-20 bg-cover bg-center bg-no-repeat"
   style="background-image: url('./assets/Tentang.svg');">
@@ -160,13 +143,9 @@
 
     </div>
   </div>
-
-  <!-- Fade kiri -->
   <div class="pointer-events-none absolute top-0 left-0 h-[400px] w-24 md:w-32
               bg-gradient-to-r from-white to-transparent z-10">
   </div>
-
-  <!-- Fade kanan -->
   <div class="pointer-events-none absolute top-0 right-0 h-[400px] w-24 md:w-32
               bg-gradient-to-l from-white to-transparent z-10">
   </div>
@@ -193,7 +172,6 @@
     </div>
   </section>
 
-<!-- ================= LOKASI ================= -->
 <section id="lokasi"
   class="relative scroll-mt-24 py-20 bg-cover bg-center bg-no-repeat"
   style="background-image: url('./assets/Lokasi.svg');">
@@ -208,7 +186,6 @@
 
     <div class="grid md:grid-cols-2 gap-8">
       
-      <!-- Desa Bojong -->
       <a href="https://www.google.com/maps?q=-7.1848418,110.0122121"
          target="_blank"
          class="block bg-white rounded-2xl shadow-md overflow-hidden 
@@ -229,7 +206,6 @@
         </div>
       </a>
 
-      <!-- Desa Bendungan -->
       <a href="https://www.google.com/maps?q=-7.1689843,110.0241225"
          target="_blank"
          class="block bg-white rounded-2xl shadow-md overflow-hidden 
@@ -253,12 +229,10 @@
     </div>
   </div>
 </section>
-  <!-- ================= MITRA ================= -->
 <section id="mitra" 
   class="relative scroll-mt-24 py-20 bg-cover bg-center bg-no-repeat"
   style="background-image: url('./assets/Mitra.svg');">
 
-  <!-- Fade Atas -->
   <div class="absolute inset-0 bg-gradient-to-b from-white via-white/60 to-transparent"></div>
 
   <div class="relative container mx-auto px-6">
@@ -272,8 +246,6 @@
   </div>
 
 </section>
-
-  <!-- ================= FOOTER ================= -->
   <footer id="footer" class="scroll-mt-24 bg-[#7ea0b8] text-white py-16">
     <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
       
@@ -369,23 +341,19 @@
     }
   });
 
-  // Mobile menu toggle
 const menuBtn = document.getElementById('menu-btn');
 const overlay = document.getElementById('mobile-overlay');
 const mobileMenu = document.getElementById('mobile-menu');
 const menuIcon = document.getElementById('menu-icon');
 
-// Toggle menu
 menuBtn.addEventListener('click', () => {
   overlay.classList.toggle('hidden');
 
-  // Animate box
   setTimeout(() => {
     mobileMenu.classList.toggle('scale-95');
     mobileMenu.classList.toggle('opacity-0');
   }, 10);
 
-  // Toggle icon
   if (overlay.classList.contains('hidden')) {
     menuIcon.textContent = '☰';
   } else {
@@ -393,14 +361,12 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-// Close when click outside box
 overlay.addEventListener('click', (e) => {
   if (e.target === overlay) {
     closeMenu();
   }
 });
 
-// Close when link clicked
 document.querySelectorAll('#mobile-menu a').forEach(link => {
   link.addEventListener('click', () => {
     closeMenu();
